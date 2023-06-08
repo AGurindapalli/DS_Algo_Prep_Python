@@ -8,10 +8,10 @@ def merge_lists(A,B):
       A.insert(a,B[b])
       a+=1
       b+=1
-     else:
+    else:
       a+=1
   if(b<len(B)):
-    A.extend(B[b:0])
+    A.extend(B[b:])
   return A
 
 print(merge_lists(list1,list2))
