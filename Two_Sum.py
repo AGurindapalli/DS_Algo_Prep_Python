@@ -4,13 +4,14 @@ def find_sum(lst,k):
     if k-num in lst:
       nlst.append(k-num)
       nlst.append(num)
+      break
   return nlst;
 
 def find_sum_index(lst,k):
   nlst={}
-  for i,n in lst:
-    if k-num in nlst:
-      return [nlst[k-num],i]
+  for i,n in enumerate(lst):
+    if k-n in nlst:
+      return [nlst[k-n],i]
     nlst[n]=i
   
         
